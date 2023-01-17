@@ -1,0 +1,124 @@
+@font-face {
+    font-family: ita1;
+    src: url(/OpenSans-VariableFont_wdth\,wght.ttf)
+}
+@font-face {
+    font-family: ita2;
+    src: url(/Cabin-VariableFont_wdth\,wght.ttf)
+}
+:root{
+    --FonteDestaque: ita1;
+    --Fonte: ita2;
+   }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    min-width: 450px;
+    font-family: var(--Fonte);
+    height: 100vh;
+    background-image: linear-gradient(68.15deg,#4f73a1, #debbf3 );
+
+}
+.cabeçalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+      
+}
+.cabeçalho-imagem{
+    height: 100px;
+}
+.links{
+    display: flex;
+    gap: 20px;
+}
+.ancora{
+    font-family: var(--FonteDestaque);
+    color: black;
+    transition: 0.3s;
+}
+:hover.ancora{
+    padding: 4px;
+    color: rgb(22, 48, 105);
+    background-color: rgb(174, 218, 243);
+    border-radius: 5px;
+    
+
+}
+
+.img-conteudo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    height: 300px;
+}
+.conteudo-total{
+    border-top: 0.4px solid black;
+    margin-bottom: 40px;
+}
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.conteudo-principal-escrito{
+    margin-top: 60px;
+    display:flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.conteudo-pri-titulo{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30pt;
+} 
+.conteudo-pri-subtitulo{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.botao{
+    font-weight: 300;
+    font-size: large;
+    background-color: rgb(174, 218, 243);
+    width: 150px;
+    height: 60px;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.473);
+    transition: 0.3s;
+}
+:hover.botao{
+    background-color: rgb(131, 198, 236); 
+    transform: scale(1.03);
+
+}
+ 
+ .conteudo-secundario-escrito{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 40px;
+ }
+ .conteudo-ter-titulo{
+    margin-top: 80px;
+    padding-top: 40px;
+    border-top: 0.4px solid black;
+    
+ }
+.conteudo-terciario{
+    padding-top: 30px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+}
